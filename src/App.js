@@ -16,6 +16,7 @@ function App() {
       {/* use .map() method to loop thru the array object and display its values */}
       {planets.map((planit, key)=>{
         return (
+        // use ternary operator to display the value or display an empty string
         planit.isGasPlanet ? <h1 key={key}>{planit.name}</h1> : ""
         )
       }) }
