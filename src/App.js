@@ -1,6 +1,7 @@
 import './App.css';
 
 function App() {
+  //create an object array
   const planets = [
     { name: "Mars", isGasPlanet: false },
     { name: "Earth", isGasPlanet: false },
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* use .map() method to loop thru the array object and display its values */}
       {planets.map((planit, key)=>{
         return (
         planit.isGasPlanet ? <h1 key={key}>{planit.name}</h1> : ""
